@@ -1,0 +1,158 @@
+body {
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to left, #ECE9E6, #FFFFFF);
+    background: -webkit-linear-gradient(right, #ECE9E6, #FFFFFF);
+    background: linear-gradient(to left, #ECE9E6, #FFFFFF);
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    font-family: "Great Vibes", cursive;
+    display: flex;
+    align-items: center;
+}
+
+.ck {
+    text-align: center;
+    font-size: 50px;
+}
+
+.swiper-container {
+    width: 100%;
+    /* padding-top: 200px; */
+    padding-bottom: 50px;
+    height: auto;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 380px;
+    background: #fff;
+    box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.2);
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+    -webkit-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+}
+
+.ss1 {
+    transform: scale(.8,.8) !important;
+}
+
+.ss1 .pin {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ss2 {
+    transform: scale(.8,.8) rotate(-5deg) !important;
+}
+
+.ss2 .pin {
+    right: 0;
+}
+
+.ss3 {
+    transform: scale(.8,.8) rotate(5deg) !important;
+}
+
+.ss3 .pin {
+    left: 0;
+}
+
+.ss4 {
+    transform: scale(.8,.8) rotate(-5deg) !important;
+}
+
+.ss4 .pin {
+    right: 0;
+}
+
+.ss5 {
+    transform: scale(.8,.8) rotate(5deg) !important;
+}
+
+.ss5 .pin {
+    left: 0;
+}
+
+.ss6 {
+    transform: scale(.8,.8) rotate(-5deg) !important;
+}
+
+.ss6 .pin {
+    right: 0;
+}
+
+.ss7 {
+    transform: scale(.8,.8) rotate(5deg) !important;
+}
+
+.ss7 .pin {
+    left: 0;
+}
+
+.ss8 {
+    transform: scale(.8,.8) rotate(-5deg) !important;
+}
+
+.ss8 .pin {
+    right: 0;
+}
+
+.ss9 {
+    transform: scale(.8,.8) rotate(5deg) !important;
+}
+
+.ss9 .pin {
+    left: 0;
+}
+
+.ss10 {
+    transform: scale(.8,.8) rotate(-5deg) !important;
+}
+
+.ss10 .pin {
+    right: 0;
+}
+
+.ss11 {
+    transform: scale(.8,.8) rotate(5deg) !important;
+}
+
+.ss11 .pin {
+    left: 0;
+}
+
+.swiper-slide:hover {
+    filter: none !important;
+    transform: scale(1) rotate(0deg) !important;
+    -webkit-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+}
+
+.swiper-slide .imgContainer img {
+    width: 80%;
+    height: 70%;
+    display: block;
+    margin: 25px auto;
+    object-fit: cover;
+} 
+
+.swiper-slide-active {
+    filter: none !important;
+    transform: scale(1) !important;
+
+}
+
+.imgDetails h2 {
+    text-align: center;
+}
+
+.pin {
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
