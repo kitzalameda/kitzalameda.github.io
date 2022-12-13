@@ -3,140 +3,265 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C&K</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes" >
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"/>
 </head>
 <body>
-    <!-- Swiper -->
-    <div class="swiper-container">
-        <h1 class="ck">Forever and Always</h1>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide ss1">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img11.jpg" alt="">
+    <div id="fullpage">
+        <div class="section header" style="background: url(img/img59.jpg);">
+            <div id="heading"></div>
+            <div class="see-map">
+                <a href="#secondSection"><i class="fa-regular fa-compass"></i></a>
+            </div>
+        </div>
+        <div class="section body">
+            <div class="map-container">
+                <div class="map-controls">
+                    <div class="change-markers us active">Where we are</div>
+                    <div class="divider"><i class="fa-solid fa-signs-post"></i></div>
+                    <div class="change-markers places">Where we've been</div>
                 </div>
-                <div class="imgDetails">
-                    <h2>Mahal kita</h2>
-                    <br>
-                    <span></span>
+                <div class="see-home">
+                    <a href="#firstSection"><i class="fa-solid fa-house"></i></a>
+                </div>
+                <div id="map"></div>
+            </div>
+            
+    
+            <!-- Modals -->
+            <div class="place-modal-overlay hidden">
+                <div class="place-modal baguio">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="place-title"><i class="fa-solid fa-location-dot"></i> Baguio</div>
+                    <div class="place-carousel">
+                        <img src="img/img1.jpg" alt="">
+                        <img src="img/img2.jpg" alt="">
+                        <img src="img/img3.jpg" alt="">
+                        <img src="img/img6.jpg" alt="">
+                        <img src="img/img8.jpg" alt="">
+                        <img src="img/img9.jpg" alt="">
+                        <img src="img/img11.jpg" alt="">
+                    </div>
+                    <div class="place-story">
+                        The first destination of our first local travel together, and the place where we had most of our firsts. I was really excited and happy that I get to travel with you, and it was a blast!
+                    </div>
+                </div>
+        
+                <div class="place-modal elyu">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="place-title"><i class="fa-solid fa-location-dot"></i> La Union</div>
+                    <div class="place-carousel">
+                        <img src="img/img4.jpg" alt="">
+                        <img src="img/img5.jpg" alt="">
+                        <img src="img/img16.jpg" alt="">
+                        <img src="img/img17.jpeg" alt="">
+                    </div>
+                    <div class="place-story">
+                        The second destination of our first local travel together, and the first time I met compets. I was really happy that I got to meet your friends and was able to bond with them kahit na talagang mahiyain ako. Haha. 
+                    </div>
+                </div>
+        
+                <div class="place-modal bulacan">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="place-title"><i class="fa-solid fa-location-dot"></i> Bulacan (Malolos & Hagonoy)</div>
+                    <div class="place-carousel">
+                        <img src="img/img34.jpeg" alt="">
+                        <img src="img/img22.jpeg" alt="">
+                        <img src="img/img12.jpg" alt="">
+                        <img src="img/img19.jpeg" alt="">
+                        <img src="img/img20.jpeg" alt="">
+                        <img src="img/img27.jpeg" alt="">
+                        <img src="img/img28.jpeg" alt="">
+                        <img src="img/img30.jpeg" alt="">
+                        <img src="img/img31.jpeg" alt="">
+                        <img src="img/img32.jpeg" alt="">
+                        <img src="img/img41.jpeg" alt="">
+                        <img src="img/img45.jpg" alt="">
+                    </div>
+                    <div class="place-story">
+                        Our hometowns, our origin, and the place where we first met. I still clearly remember the night we first met sa Caltex. I was very nervous and excited at the same time, that I don't even know how to approach you. Haha. But all that nervousness went away as soon as I saw you and spent the night with you. I can't wait to make more memories with you.
+                    </div>
+                </div>
+        
+                <div class="place-modal manila">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="place-title"><i class="fa-solid fa-location-dot"></i> Manila</div>
+                    <div class="place-carousel">
+                        <img src="img/img18.jpeg" alt="">
+                        <img src="img/img23.jpeg" alt="">
+                        <img src="img/img26.jpeg" alt="">
+                        <img src="img/img33.jpeg" alt="">
+                        <img src="img/img38.jpeg" alt="">
+                        <img src="img/img39.jpeg" alt="">
+                        <img src="img/img42.jpg" alt="">
+                        <img src="img/img21.jpeg" alt="">
+                    </div>
+                    <div class="place-story">
+                        Our quick get away destination, our night out destination, our shopping destination, and our madalas ligaw destination. Haha. Driving, with you on the passenger seat, really hits different. It makes me feel at ease lalo na when I hold your hand or you put your hand inside my shirt. Looking forward to more ligaws and quick drives with you, Bubba.
+                    </div>
+                </div>
+        
+                <div class="place-modal boracay">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="place-title"><i class="fa-solid fa-location-dot"></i> Boracay</div>
+                    <div class="place-carousel">
+                        <img src="img/img25.jpeg" alt="">
+                        <img src="img/img29.jpeg" alt="">
+                        <img src="img/img36.jpeg" alt="">
+                        <img src="img/img40.jpeg" alt="">
+                        <img src="img/img47.jpeg" alt="">
+                        <img src="img/img48.jpeg" alt="">
+                        <img src="img/img49.jpeg" alt="">
+                    </div>
+                    <div class="place-story">
+                        Our first plane ride and travel together! I am really happy that my first plane ride was with you kahit na hindi tayo magkatabi but there will still be a lot of chances for that. Our first travel with your family and it was really fun lalo na with chicken nuggets. Medyo nasunog tayo sa araw pero it was all worth it and would love to come back here again with you. Looking forward to more plane rides with you!
+                    </div>
+                </div>
+        
+                <div class="place-modal zambales">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="place-title"><i class="fa-solid fa-location-dot"></i> Zambales</div>
+                    <div class="place-carousel">
+                        <img src="img/img35.jpeg" alt="">
+                        <img src="img/img37.jpeg" alt="">
+                        <img src="img/img43.jpg" alt="">
+                        <img src="img/img44.jpg" alt="">
+                        <img src="img/img46.jpg" alt="">
+                    </div>
+                    <div class="place-story">
+                        Second gala with compets na shy padin ako. Haha. Kahit na 1 night lang and bumabagyo, super enjoy padin. Haha. Kahit nung una hindi dapat ako kasama kaya medyo sad ako, pero it's okay because I want you to enjoy din naman without me once in a while. Your happiness is my happiness as well.
+                    </div>
+                </div>
+
+                <div class="letter-modal">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="letter-container">
+                        <div class="letter-heading">Hey hey,</div>
+                        <div class="letter-body">Happy 3rd anniversary, Bubba! Time really flies fast noh? Parang kelan lang magkikita pa lang tayo for the first time sa pinaka iconic na gas station natin. Haha. Here we are at 3 years. We had our highs and lows, our relationship and patience tested, and challenges along the way, but even though it brings us to our lowest, I will never ever give up on you and us. My life is already yours and yours alone. I am here to stay and that will never change. I know I still have a lot to work on, and I promise that I will always prove to you that I am worthy to be by your side. It's been 3 long years but I still yearn for you every single day, and I think I would never get enough of you kahit na araw araw na tayo magkasama. I feel like a life time with you would still be too short for me. Just thinking about all the things that we can still experince along the road excites me, may it be good or bad, as I know it will help us to learn and grow together. I will never miss the chance to make you happy, and will never miss the change to help you with anything you need. I know we also have our individual lives to take care of, and I just want to say that I am a proud witness of how resilient you are. But I also want you to know that we have each other to rely on. We are in this together no matter what it may be, and no matter how hard it gets, I always got your back. I am your partner through thick and thin, through heaven and hell, forever and always. The dream of being with you permanently drives me to be better and fuels me to work harder. I can't wait to spend the rest of my life with you and fullfill all our goals and dreams together. But for now, I look forward to the day where we can spend this day together. I love and miss you so much, Bubba.</div>
+                        <div class="letter-footer">Your Bubba</div>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-slide ss2">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img2.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>I love you</h2>
-                    <br>
-                    <span></span>
-                </div>
-            </div>
-            <div class="swiper-slide ss3">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img4.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>Sarang hae</h2>
-                    <br>
-                    <span></span>
-                </div>
-            </div>
-            <div class="swiper-slide ss4">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img5.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>Wo ai ni</h2>
-                    <br>
-                    <span></span>
-                </div>
-            </div>
-            <div class="swiper-slide ss5">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img6.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>Je t'aime</h2>
-                    <br>
-                    <span></span>
-                </div>
-            </div>
-            <div class="swiper-slide ss6">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img7.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>Te amo</h2>
-                    <br>
-                    <span></span>
-                </div>
-            </div>
-            <div class="swiper-slide ss7">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img8.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>Aishiteru</h2>
-                    <br>
-                    <span></span>
-                </div>
-            </div>
-            <div class="swiper-slide ss8">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img9.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>Ich liebe Dich</h2>
-                    <br>
-                    <span></span>
-                </div>
-            </div>
-            <div class="swiper-slide ss9">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img10.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>Ti amo</h2>
-                    <br>
-                    <span></span>
-                </div>
-            </div>
-            <div class="swiper-slide ss10">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img3.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>Se agapo</h2>
-                    <br>
-                    <span></span>
-                </div>
-            </div>
-            <div class="swiper-slide ss11">
-                <img src="img/pin.png" alt="" class="pin">
-                <div class="imgContainer">
-                    <img src="img/img1.jpg" alt="">
-                </div>
-                <div class="imgDetails">
-                    <h2>Ik hou van jou</h2>
-                    <br>
-                    <span></span>
-                </div>
+            <!-- Modals -->
+        </div>
+    </div>
+    
+
+    <!-- Places -->
+    <div id="baguio" style="display:none;">
+        <div class="place-window" data-place="baguio">
+            <div class="place-title">Baguio</div>
+            <div class="place-gallery">
+                <img src="img/img1.jpg" alt="">
+                <img src="img/img2.jpg" alt="">
+                <img src="img/img3.jpg" alt="">
+                <img src="img/img6.jpg" alt="">
+                <img src="img/img8.jpg" alt="">
+                <img src="img/img9.jpg" alt="">
+                <img src="img/img11.jpg" alt="">
+                <img src="img/img52.jpg" alt="">
+                <img src="img/img54.jpg" alt="">
+                <img src="img/img53.jpg" alt="">
             </div>
         </div>
     </div>
+
+    <div id="elyu" style="display:none;">
+        <div class="place-window" data-place="elyu">
+            <div class="place-title">La Union</div>
+            <div class="place-gallery">
+                <img src="img/img4.jpg" alt="">
+                <img src="img/img5.jpg" alt="">
+                <img src="img/img16.jpg" alt="">
+                <img src="img/img17.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="zambales" style="display:none;">
+        <div class="place-window" data-place="zambales">
+            <div class="place-title">Zambales</div>
+            <div class="place-gallery">
+                <img src="img/img35.jpeg" alt="">
+                <img src="img/img37.jpeg" alt="">
+                <img src="img/img43.jpg" alt="">
+                <img src="img/img44.jpg" alt="">
+                <img src="img/img46.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="boracay" style="display:none;">
+        <div class="place-window" data-place="boracay">
+            <div class="place-title">Boracay</div>
+            <div class="place-gallery">
+                <img src="img/img25.jpeg" alt="">
+                <img src="img/img29.jpeg" alt="">
+                <img src="img/img36.jpeg" alt="">
+                <img src="img/img40.jpeg" alt="">
+                <img src="img/img47.jpeg" alt="">
+                <img src="img/img48.jpeg" alt="">
+                <img src="img/img49.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="manila" style="display:none;">
+        <div class="place-window" data-place="manila">
+            <div class="place-title">Manila</div>
+            <div class="place-gallery">
+                <img src="img/img18.jpeg" alt="">
+                <img src="img/img23.jpeg" alt="">
+                <img src="img/img26.jpeg" alt="">
+                <img src="img/img33.jpeg" alt="">
+                <img src="img/img38.jpeg" alt="">
+                <img src="img/img39.jpeg" alt="">
+                <img src="img/img42.jpg" alt="">
+                <img src="img/img21.jpeg" alt="">
+                <img src="img/img55.jpg" alt="">
+                <img src="img/img56.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="bulacan" style="display:none;">
+        <div class="place-window" data-place="bulacan">
+            <div class="place-title">Bulacan</div>
+            <div class="place-gallery">
+                <img src="img/img34.jpeg" alt="">
+                <img src="img/img22.jpeg" alt="">
+                <img src="img/img12.jpg" alt="">
+                <img src="img/img19.jpeg" alt="">
+                <img src="img/img20.jpeg" alt="">
+                <img src="img/img27.jpeg" alt="">
+                <img src="img/img28.jpeg" alt="">
+                <img src="img/img30.jpeg" alt="">
+                <img src="img/img31.jpeg" alt="">
+                <img src="img/img32.jpeg" alt="">
+                <img src="img/img41.jpeg" alt="">
+                <img src="img/img45.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="letter" style="display:none;">
+        <div class="letter-window">
+            <div class="letter-title">Read me</div>
+        </div>
+    </div>
+    <!-- Places -->
+
+    
+    
+
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.7.0/index.umd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
