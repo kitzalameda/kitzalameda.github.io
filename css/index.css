@@ -166,6 +166,9 @@ body::-webkit-scrollbar, .letter-container::-webkit-scrollbar {
 .letter-modal .letter-heading, .letter-modal .letter-body {
     margin-bottom: 20px;
 }
+.letter-modal .letter-body {
+    overflow: auto;
+}
 .place-modal {
     display: none;
     width: 400px;
