@@ -166,12 +166,14 @@ body::-webkit-scrollbar {
 .letter-container {
     max-height: 700px;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .letter-modal .letter-heading, .letter-modal .letter-body {
     margin-bottom: 20px;
 }
 .letter-modal .letter-body {
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .place-modal {
     display: none;
