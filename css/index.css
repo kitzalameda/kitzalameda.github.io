@@ -8,7 +8,7 @@ body {
 body.static {
     overflow: hidden;
 }
-body::-webkit-scrollbar, .letter-container::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
 }
 .section.header {
@@ -164,7 +164,7 @@ body::-webkit-scrollbar, .letter-container::-webkit-scrollbar {
     font-family: 'Shadows Into Light', cursive;
 }
 .letter-container {
-    max-height: 300px;
+    max-height: 700px;
     overflow: auto;
 }
 .letter-modal .letter-heading, .letter-modal .letter-body {
