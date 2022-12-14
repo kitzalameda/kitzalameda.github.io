@@ -4,13 +4,21 @@ new TypeIt("#heading", {
     loop: false,
 }).go();
 
-$('#fullpage').fullpage({
-    anchors: ['firstSection', 'secondSection'],
-    afterLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-        if(index == 2) {
-            $.fn.fullpage.setAllowScrolling(false, 'up');
-        }
-    }
+// $('#fullpage').fullpage({
+//     anchors: ['firstSection', 'secondSection'],
+//     afterLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+//         if(index == 2) {
+//             $.fn.fullpage.setAllowScrolling(false, 'up');
+//         }
+//     }
+// });
+
+$('.see-map i').on('click', function(e) {
+    $('.section.body').addClass('shown');
+});
+
+$('.see-home i').on('click', function(e) {
+    $('.section.body').removeClass('shown');
 });
 
 var letter = $('#letter').html();

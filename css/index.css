@@ -12,9 +12,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 .section.header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/img60.jpg);
     background-repeat: no-repeat !important;
     background-position: left bottom !important;
-    background-size: contain !important;
+    background-size: cover !important;
 }
 #heading {
     font-family: 'Shadows Into Light', cursive;
@@ -24,8 +25,12 @@ body::-webkit-scrollbar {
     height: 100%;
     align-items: center;
     text-align: center;
+    color: #fff;
 }
-.see-map a, .see-home a {
+.see-map a {
+    color: #fff;
+}
+.see-home a {
     color: #1b1b1b;
 }
 .see-map i {
@@ -58,8 +63,24 @@ body::-webkit-scrollbar {
 .body {
     height: 100%;
 }
+.section.body {
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    transition: .3s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section.body.shown {
+    top: 0;
+    transition: .3s all;
+}
 .map-container {
-    height: 100%;
+    height: 90%;
+    width: 90%;
+    margin: auto;
 }
 #map {
     height: 100%;
@@ -229,8 +250,8 @@ body::-webkit-scrollbar {
 @media(min-width: 641px) {
     #heading {
         font-size: 75px;
-        padding-left: 720px;
-        padding-right: 114px;
+        /* padding-left: 720px;
+        padding-right: 114px; */
     }
     .map-controls {
         width: auto;
@@ -245,15 +266,15 @@ body::-webkit-scrollbar {
 }
 @media(max-width: 640px) {
     #heading {
-        padding-bottom: 80%;
+        /* padding-bottom: 80%; */
     }
     .section.header {
-        background-size: contain !important;
+        /* background-size: contain !important; */
     }
     /* .letter-container {
         max-height: 700px;
     } */
     .see-map {
-        display: none;
+        /* display: none; */
     }
 }
