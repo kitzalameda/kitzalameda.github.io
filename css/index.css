@@ -164,7 +164,7 @@ body::-webkit-scrollbar, .letter-container::-webkit-scrollbar {
     font-family: 'Shadows Into Light', cursive;
 }
 .letter-container {
-    max-height: 700px;
+    max-height: 300px;
     overflow: auto;
 }
 .letter-modal .letter-heading, .letter-modal .letter-body {
